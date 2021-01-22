@@ -18,7 +18,7 @@ function budgetCalculator(watch,phone,laptop){
     return gerandTotal;
 }
 
-// var totalCost = budgetCalculator(2,10,1);
+// var totalCost = budgetCalculator(5,10,6);
 // console.log(totalCost);
 
 function hotelCost(dayCost){
@@ -45,7 +45,7 @@ function hotelCost(dayCost){
     }
 }
 
-// var total = hotelCost(100);
+// var total = hotelCost(21);
 // console.log(total)
 
 function megaFriend(friend){
@@ -58,5 +58,5 @@ function megaFriend(friend){
     return longestString;
 }
 
-// var LongestName = megaFriend(["Masud", "Masud Rana", "Md Masud Rana"]);
+// var LongestName = megaFriend(["Masud", "Korimul", "Sorif","Rubel", "Eleyas Hossain","Karina", "Shamima","Rana"]);
 // console.log(LongestName);
