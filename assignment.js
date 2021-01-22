@@ -1,31 +1,35 @@
 // https://github.com/freelancermasudrana/assignment-js
 
 function kilometerToMeter(kilometer){
-    var meter =kilometer*1000;
+    var meter = kilometer*1000; 
     return meter;
 }
-var dowraw = kilometerToMeter(197);
-console.log(dowraw)
 
-function budgetCalculator(ghori,phone,laptop){
-    var totalGhori = ghori*50;
+// var resultMeter = kilometerToMeter(197);
+// console.log(resultMeter)
+
+
+
+function budgetCalculator(watch,phone,laptop){
+    var totalWatch = watch*50;
     var totalPhone = phone*100;
     var totalLaptop = laptop*500;
-    var gerandTotal = totalGhori+totalPhone+totalLaptop;
+    var gerandTotal = totalWatch + totalPhone + totalLaptop;
     return gerandTotal;
 }
-var result = budgetCalculator(0,10,0);
-console.log(result)
+
+// var totalCost = budgetCalculator(2,10,1);
+// console.log(totalCost);
 
 function hotelCost(dayCost){
     if(dayCost<=10){
-        var undarTen = dayCost*100;
-        return undarTen;
+        var undarTenDays = dayCost*100;
+        return undarTenDays;
     }
     else if(dayCost<=20){
        var firstTenDays = 10*100;
-       var remain = dayCost - 10;
-        var secoundTenDays = remain*80;
+       var remaining = dayCost - 10;
+        var secoundTenDays = remaining*80;
         var gerandUpTen = firstTenDays+secoundTenDays;
         return gerandUpTen;
     }
@@ -33,24 +37,26 @@ function hotelCost(dayCost){
         if(dayCost>20){
             var firstTenDays = 10*100;
             var secoundTenDays = 10*80;
-            var remain = dayCost - 20;
-            var lastDayWaise = remain*50;
-            var totalThird = firstTenDays+secoundTenDays+lastDayWaise;
-            return totalThird;
+            var remaining = dayCost - 20;
+            var lastDayWaise = remaining*50;
+            var gerandUpTwentey = firstTenDays + secoundTenDays + lastDayWaise;
+            return gerandUpTwentey;
         }
     }
 }
-var total = hotelCost(100);
-console.log(total)
+
+// var total = hotelCost(100);
+// console.log(total)
 
 function megaFriend(friend){
-    var longest = " ";
+    var longestString = " ";
     friend.map(function(friendsName){
-        if(friendsName.length > longest.length){
-            longest = friendsName;
+        if(friendsName.length > longestString.length){
+            longestString = friendsName;
         }
     })
-    return longest;
+    return longestString;
 }
-var resultLongestName = megaFriend(["Masud", "Masud Rana", "Md Masud Rana"]);
-console.log(resultLongestName);
+
+// var LongestName = megaFriend(["Masud", "Masud Rana", "Md Masud Rana"]);
+// console.log(LongestName);
